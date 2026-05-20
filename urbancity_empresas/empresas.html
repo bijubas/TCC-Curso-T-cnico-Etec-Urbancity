@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresas</title>
+    <link rel="stylesheet" href="empresas.css">
+    <link rel="shortcut icon" href="../imgs/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="empresas.js"></script>
+</head>
+<body>
+    <div class="navi">
+        <button class="botao">Quem somos?</button>
+        <button class="botao" onclick="loginpag()">Login</button>
+        <button class="botao">Doações</button>
+      <button class="btn" onclick="cadastro()">Cadastre-se</button>
+     <button class="btn">Ajuda</button>
+      <img src="../imgs/logo2.png" class="logo"/>
+    </div>
+     <div class="parte1">
+       <img src="../imgs/employer.jpg" class="employer"/>
+       <h1>Economia girando e <br/>a limpeza no comando!</h1>
+       <p>Uma plataforma completa de<br/>
+        gestão de limpeza da cidade<br/>
+        de São Paulo, que<br/>
+        acompanha a jornada de<br/>
+        cada um dos seus<br/>
+        colaboradores de forma<br/>
+        segura e confiável!</p>
+     </div>
+     <div class="parte2">
+      <img src="../imgs/businesswoman.png" class="businesswoman"/>
+      <section class="suportes">
+        <img src="../imgs/suporte1.png"  class="img-suporte"/>
+        <h2>Central de atendimento</h2>
+        <p> Atendimento 24 horas por dia, pelo nosso site
+        </p>
+        <img src="../imgs/suporte2.png" class="img-suporte"/>
+        <h2>Otimize seu tempo</h2>
+        <p>
+            Com nosso site fica mais fácil sua comunicação com a nossa empresa
+        </p>
+        <img src="../imgs/suporte3.png" class="img-suporte"/>
+        <h2>Presença e praticidade</h2>
+         <p>
+            Estamos presentes em varias cidades 
+         </p>
+      </section>
+     </div>
+     <div class="parte3" id="formulario">
+        <P class="txt_emp">Se a sua empresa deseja ser parceira da Urban City,
+            preencha o formulário abaixo para entrar em contato com a nossa equipe.
+        </P><br/><bt/><br/><br/>
+
+     <h2>Nome da empresa</h2>
+     <input type="text" placeholder="Digite o nome da sua empresa" class="input">
+     <h2>Onde sua empresa está sediada</h2>
+     <input type="text" placeholder="Local da empresa" class="input">
+     <h2>CNPJ</h2>
+     <input type="text" placeholder="CNPJ da empresa" class="input"><br/>
+     
+     <button id="openModal" class="btn-poli">Política de Privacidade</button><br/>
+     <dialog id="modal">
+         <h2>Política de Privacidade</h2>
+         <p class="politica">
+             A sua privacidade é importante para nós. É política do Urban City respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site Urban City, e outros sites que possuímos e operamos. </br>
+
+             Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento. Também informamos por que estamos coletando e como será usado. </br>
+             
+             Apenas retemos as informações coletadas pelo tempo necessário para fornecer o serviço solicitado. Quando armazenamos dados, protegemos dentro de meios comercialmente aceitáveis ​​para evitar perdas e roubos, bem como acesso, divulgação, cópia, uso ou modificação não autorizados.</br>
+             
+             
+             Não compartilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando exigido por lei.</br>
+             
+             O nosso site pode ter links para sites externos que não são operados por nós. Esteja ciente de que não temos controle sobre o conteúdo e práticas desses sites e não podemos aceitar responsabilidade por suas respectivas políticas de privacidade.</br>
+             
+             Você é livre para recusar a nossa solicitação de informações pessoais, entendendo que talvez não possamos fornecer alguns dos serviços desejados.</br>
+             
+             O uso continuado de nosso site será considerado como aceitação de nossas práticas em torno de privacidade e informações pessoais. Se você tiver alguma dúvida sobre como lidamos com dados do usuário e informações pessoais, entre em contacto connosco.</br>
+             
+             O serviço Google AdSense que usamos para veicular publicidade usa um cookie DoubleClick para veicular anúncios mais relevantes em toda a Web e limitar o número de vezes que um determinado anúncio é exibido para você.</br>
+             
+             Para mais informações sobre o Google AdSense, consulte as FAQs oficiais sobre privacidade do Google AdSense.</br>
+             
+             Utilizamos anúncios para compensar os custos de funcionamento deste site e fornecer financiamento para futuros desenvolvimentos. Os cookies de publicidade comportamental usados ​​por este site foram projetados para garantir que você forneça os anúncios mais relevantes sempre que possível, rastreando anonimamente seus interesses e apresentando coisas semelhantes que possam ser do seu interesse.</br>
+             
+             Vários parceiros anunciam em nosso nome e os cookies de rastreamento de afiliados simplesmente nos permitem ver se nossos clientes acessaram o site através de um dos sites de nossos parceiros, para que possamos creditá-los adequadamente e, quando aplicável, permitir que nossos parceiros afiliados ofereçam qualquer promoção que pode fornecê-lo para fazer uma compra.</br>
+             
+             Compromisso do Usuário</br>
+             
+             O usuário se compromete a fazer uso adequado dos conteúdos e da informação que o Urban City oferece no site e com caráter enunciativo, mas não limitativo:</br>
+             
+             A) Não se envolver em atividades que sejam ilegais ou contrárias à boa fé a à ordem pública;</br>
+             B) Não difundir propaganda ou conteúdo de natureza racista, xenofóbica, jogos de sorte ou azar, qualquer tipo de pornografia ilegal, de apologia ao terrorismo ou contra os direitos humanos;</br>
+             C) Não causar danos aos sistemas físicos (hardwares) e lógicos (softwares) do Urban City, de seus fornecedores ou terceiros, para introduzir ou disseminar vírus informáticos ou quaisquer outros sistemas de hardware ou software que sejam capazes de causar danos anteriormente mencionados.</br>
+             Mais informações </br>
+             Esperemos que esteja esclarecido e, como mencionado anteriormente, se houver algo que você não tem certeza se precisa ou não, geralmente é mais seguro deixar os cookies ativados, caso interaja com um dos recursos que você usa em nosso site.</br>
+             Esta política é efetiva a partir de 9 Outubro 2023 10:15
+         </p>
+         <button type="button" id="closeModal">Fechar</button>
+     </dialog>
+     <button type="button" onclick="enviar()" class="btn-enviar">Enviar</button>
+    </div>
+
+<footer class="degrade"></footer>
+<footer class="rodape">
+         <div class="btns">
+         <a href="../urbancity_sejacomu/sejacomu.html"><button  class="comunitario">Voluntário</button></a> <a><button class="quem somos">Quem somos</button></a><br/>
+         <a href="../urbancity_empresas/empresas.html"><button  class="empresas">Empresas</button></a><a><button class="Cidades">Cidades</button></a><br/>
+         <button  class="doacoes">Doações</button>                     <a><button class="blog">Blog</button></a><br/>
+         <button  class="ajuda">Ajuda</button>                        <a><button class="trabalhe">Trabalhe com a gente</button></a><br/>
+         </div>
+         <div class="baixe">
+             <p>Baixe o app</p>
+             <a><i class="fab fa-google-play"></i>   Google play</a></br>
+             <a><i class="fab fa-app-store-ios"></i>  App sotre</a>
+         </div>
+         <div class="sejac">
+             <p>Seja Voluntário</p>
+             <a href="../urbancity_sejacomu/sejacomu.html"><button>Quero ser Voluntário</button></a>
+         </div>
+         <div class="termo">
+             <h3>Brasil<img src="../imgs/bandeiraBR.svg"><i class="fa bandeira-brasil"></i></h3>
+             <p>Termos de Uso e Privacidade
+             <p>© 2023 Urbancity 
+             </p>
+         </div>
+         <nav class="links">
+          <h3>Acompanhe a Urbancity nas redes sociais</h3><br/>
+          <a><i class="fab fa-facebook"></i></a>
+          <a><i class="fab fa-twitter"></i></a>
+          <a><i class="fab fa-youtube"></i></a>
+          <a><i class="fab fa-instagram"></i></a>
+         </nav>
+     </footer>
+</body>
+</html>
