@@ -5,3 +5,4 @@
 https://github.com/user-attachments/assets/95f7c66c-46f0-4876-9419-caee835cc5f9
 
 # Campo de pesquisa
+As pesquisas foram aprofundadas sobre o público-alvo para compreender suas necessidades, interesses e formas de engajamento, utilizando essas informações para desenvolver uma plataforma mais acessível, intuitiva e voltada à mobilização de voluntários para ações de revitalização urbana em São Paulo.
