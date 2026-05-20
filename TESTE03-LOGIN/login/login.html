@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../imgs/logo.png">  
+</head>
+<body>
+
+    <script src="../index.js"></script>
+    <script src="../validations.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth-compat.js"></script>
+    <script src="../login_cadastro.js"></script>
+
+    <script>
+         const firebaseConfig = {
+        apiKey: "AIzaSyDqD3WV75eepQUUPYEwqWQWeUYamYFaE0A",
+    authDomain: "atividade-marcus.firebaseapp.com",
+    projectId: "atividade-marcus",
+    storageBucket: "atividade-marcus.appspot.com",
+    messagingSenderId: "510050102086",
+    appId: "1:510050102086:web:02b4eb84d4da1ffbdcd347"
+        }
+        firebaseConfig.initializeApp(firebaseConfig);
+        firebase.auth().onAuthStateChanged(user => {
+            if (user) {
+                window.location.href = "../paginainicial.html";
+            }
+        })
+
+
+    </script>
+
+
+
+
+    <div class="navi">
+        <button class="botao">Página Inicial</button>
+        <button class="botao">Quem Somos?</button>
+      <button class="btn" onclick="cadastro()">Cadastre-se</button>
+      <img src="../imgs/logo2.png" class="logo"/>
+
+    </div>
+
+    
+    <div class="container">
+        <div class="form-image">
+            <img src="IMAGEM1.PNG" alt="">
+        </div>
+        
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Login</h1>
+                    </div>
+                </div>
+                <div class="login">
+                    <div class="input-box">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Digite seu Email" required onchange="onChangeEmail()" class="inEmail"/>
+                        <div class="error" id="email-invalid-error">Email é obrigatório</div>
+                        <div class="error" id="email-required-error">Email é inválido</div>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="password" name="password" placeholder="Digite sua senha" required onchange="onChangePassword()" class="inEmail">
+                    </div>
+                    <div class="continue-button">
+                        <button type="button" class="btn-continue" id="login-button" disabled="true" onclick="login()">Entrar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
