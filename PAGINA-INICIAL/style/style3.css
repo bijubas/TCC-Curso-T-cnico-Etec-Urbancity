@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+.img {
+    background-image: url(fundoimg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 570px;
+    display: flex;
+
+}
+
+.text-nav {
+    color: white;
+    font-family: sans-serif;
+    font-size: 2vw;
+    display: flex;
+    padding-top: 30px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 9000px;
+    padding-top: 36px;
+    justify-content: flex-end;
+    margin-right: 20px;
+    height: 60px;
+
+}
+
+.nav, p {
+    margin-right: 20px;
+}
+
+.nav p, .nav a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: white;
+    font-size: 2vw; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+.nav a { /* Adapte o padding conforme necessário */
+    padding-top: 36px;
+}
+     
+
+
+.texto-voluntario {
+    float: right;
+}
+   
+
+
+#text2 {
+    color: black;
+    font-family: sans-serif;
+    font-size: 2vw;
+    white-space: pre-wrap;
+    margin-left: 21px;
+    margin-bottom: 10px;
+
+}
+
+#titulo2 {
+    color: #FF7B1C;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    white-space: pre-wrap;
+    font-size: 2.5vw;
+    
+
+  
+}
+
+.voluntario {
+    display: flex;
+    align-items: center;
+}
+
+.img2 {
+    flex: 1;
+    max-width: 40%; /* Ajuste a largura máxima conforme necessário */
+    margin: 20px;
+}
+
+.img2 img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Ajuste a largura máxima da imagem */
+}
+
+
+
+.empresa {
+    background-color: #FF7B1C;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 450px;
+}
+
+.text-empresa {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-size: 1.5vw;
+    color: white;
+    margin-left: 20px;
+}
+
+.text-empresa h1 {
+    white-space: pre;
+}
+
+.botao {
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #FF7B1C;
+    margin-top: 10px;
+}
+
+.img3 {
+    margin-left: auto; /* Para alinhar a imagem à direita */
+    width: 35%;
+    margin-right: 4rem;
+}
+
+.img3 img {
+    height: auto;
+    width: 100%; /* Certifique-se de que a imagem não ultrapasse a largura da div */
+    margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+    .img3 {
+        display: none;
+    }
+
+    .empresa {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .text-empresa {
+        text-align: center;
+    }
+
+    .text-empresa h1 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .text-empresa button {
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .img2 {
+        display: none;
+
+    }
+
+    .voluntario {
+        width: 100%;
+        height: 500px;
+
+    }
+
+    .texto-voluntario {
+        width: 100%;
+    }
+
+    #text2 {
+        font-size: 25px;
+        text-align: center;
+
+    }
+
+    #titulo2{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .img {
+        height: 300px;
+    }
+
+}
+
+
+@media screen and (max-width: 700px) {
+    .img3 {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .voluntario{
+        width: 90%;
+        height: 500px;
+    }
+
+    
+}
+
+
+.rodape {
+    background-color: rgb(33, 33, 33);
+    height: 70px;
+    display: flex;
+    align-items: center;
+   
+}
+
+.rodape a {
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    margin-right: 20px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
