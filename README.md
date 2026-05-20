@@ -19,4 +19,8 @@ Esta pergunta possui o objetivo de ter conhecimento das áreas mais necessitadas
 <img width="2360" height="580" alt="Image" src="https://github.com/user-attachments/assets/3186b151-9e97-4145-ae56-50fce353983d" />
 Na última pergunta, questiona-se aos participantes se os mesmos participariam de uma ação voluntariada para revitalização de espaços públicos, objetivando saber se a ideia do projeto seria acolhida pelo público.
 
+# Diagramas de Banco de dados
+Também realizamos a modelagem do sistema por meio de diagramas de classes e diagramas entidade-relacionamento (ER), estruturando a organização do banco de dados e o funcionamento da plataforma. Essa etapa foi crucial para definir entidades, relacionamentos, funcionalidades e a interação entre os usuários e o sistema, garantindo uma estrutura mais organizada.
+
+
 
