@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina inicial</title>
+    <link rel="shortcut icon" href="../imgs/logo.png">
+    <link rel="stylesheet" href="pagina_inicial.css">
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth-compat.js"></script>
+    <script src="pagina_inicial.js"></script>
+    <script src="logout.js"></script>
+</head>
+<body>
+    <div class="navi">
+        <button class="btn" onclick="home()">Home</button>
+        <button class="btn" onclick="perfil()">Meu perfil</button>
+     <button class="btn" onclick="denun()">Indique um Local</button>
+     <button type="button" onclick="logout()" class="btn">Sair</button>
+    </div>
+    <div class="pd">
+        <img src="../imgs/arvore.png" class="arv">
+        <h1 class="part_doe">Participe ou Doe para diversos Projetos!</h1>
+        <img src="../imgs/arvore.png" class="arv2">
+    </div>
+    <div class="exps">
+    <div class="exp1">
+        <img src="../imgs/ftperfil1.jpg" class="ftper"> <h2>@Eduardo-Silva</h2>
+        <div class="infos">
+        <img src="../imgs/praca1.jpg" alt="Praça Cruz da Esperança - Casa Verde" class="praca">
+        <h3>Praça Cruz da Esperança - Casa Verde</h3>
+        <section class="exp1w">
+        <h4>Participe:</h4>
+        <button type="button" onclick="whats()"><img src="../imgs/whatsapp.png" class="whats"></button>
+        </section>
+        <section class="exp1v">
+        <h4>Doe aqui:</h4>
+        <button type="button" onclick="vakinha()"><img src="../imgs/vakinha.png" class="vakinha"></button>
+        </section>
+        </div>
+    </div>
+    <div class="exp2">
+        <img src="../imgs/ftperfil2.jpg" class="ftper"> <h2>@Gabriella-Duarte</h2>
+        <div class="infos">
+        <img src="../imgs/praca2.jpg" alt="Rua Clélia - Pompeia" class="praca">
+        <h3>Rua Clélia - Pompeia</h3>
+        <section class="exp1w">
+            <h4>Participe:</h4>
+            <button type="button" onclick="whats()"><img src="../imgs/whatsapp.png" class="whats"></button>
+            </section>
+            <section class="exp1v">
+            <h4>Doe aqui:</h4>
+            <button type="button" onclick="vakinha()"><img src="../imgs/vakinha.png" class="vakinha"></button>
+            </section>
+        </div>
+    </div>
+    </div>
+    <footer class="rod">
+        <button class="btn">Ajuda</button>
+        <button class="btn">Quem somos?</button>
+    </footer>
+</body>
+</html>
