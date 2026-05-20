@@ -1,0 +1,101 @@
+html {
+    max-width: 100%;
+    max-height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body {
+    background-color: white;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0%;
+}
+
+.login {
+    text-align: center;
+}
+.login h1 {
+    color:#28502E
+}
+.inEmail {
+    width: 250px;
+    height: 40px;
+    margin-bottom: 2%;
+    background-color:  #EEEEEE;
+    border: none;
+}
+.btn-continue {
+    background-color: #F77F00;
+    color: white;
+    border: none;
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.outros {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.btn-login {
+    background-color: #EEEEEE;
+    border: none;
+    width: 250px;
+    height: 50px;
+    margin-top: 2%;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+}
+.navi {
+    background-color: rgba(250, 130, 44, 0.993);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    }
+    
+    
+    .navi > button {
+      color: beige;
+      text-decoration: none;
+      margin-top: 15px;
+      padding: 10px;
+      background-color: transparent;
+      border: none;
+      width: 115px;
+    
+      font-weight: bold;
+      transition-duration: 1s;
+      margin: 10px;
+    }
+    
+    .navi > button:hover {
+    background-color:beige;
+    color: #FF7B1C;
+    }
+
+.logo{
+    position: absolute;
+    top: 0;
+    right: 5%;
+    transition: right 0.5s;
+    width: 100px;
+}
+.error {
+    background-color: red;
+    color: white;
+    display: none;
+}
+
+.btn-poli {
+   border: none;
+   font-size: medium;
+   margin-bottom: 2%;
+   background-color: transparent;
+}
+
+.politica {
+   text-align:left;
+}

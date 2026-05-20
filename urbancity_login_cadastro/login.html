@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login_cadastro.css">
+    <link rel="shortcut icon" href="../imgs/logo.png">    
+    <script src="index.js"></script>
+    <script src="Validations.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth-compat.js"></script>
+    <script src="login_cadastro.js"></script>
+</head>
+<body>
+    <div class="navi">
+        <button class="botao">Quem somos?</button>
+        <button class="botao" onclick="loginpag()">Login</button>
+        <button class="botao">Doações</button>
+      <button class="btn" onclick="cadastro()">Cadastre-se</button>
+     <button class="btn">Ajuda</button>
+      <img src="../imgs/logo2.png" class="logo"/>
+    </div>
+    
+    <div class="login">
+        <h1>Login</h1>
+        <input type="email" name="email" id="email" placeholder="seu@email.com" onchange="onChangeEmail()" class="inEmail"/><br/>
+        <div class="error" id="email-required-error">Email é obrigatório</div>
+        <div class="error" id="email-required-error">Email é inválido</div>
+        <input type="password" name="password" id="password" placeholder="Senha" onchange="onChangePassword()" class="inEmail"><br/>
+        <button type="button" class="btn-continue" id="login-button" disabled="true" onclick="login()">Entrar</button>
+        <h2>Não tem conta?</h2>
+        <section class="outros">
+            <button type="button" class="btn-continue" onclick="register()">Cadastre-se</button>
+        </section>
+    </div>
+</body>
+</html>
