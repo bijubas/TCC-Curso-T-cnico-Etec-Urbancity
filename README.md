@@ -32,7 +32,7 @@ A classe "Denúncia" representa as denúncias de localidades feitas pelo usuári
 A classe "localidades" representa o local que precisa ser revitalizado. A mesma possui os seguintes atributos: descrição, tipo_localidade e problema. A classe "localidades" possui relacionamento com a classe "Endereço", onde, localidades pertence a um endereço, e um endereço pertence a uma ou muitas localidades. 
 A classe "ENDEREÇO", representa o endereço dos locais a serem revitalizados. A mesma possui os seguintes atributos: id_endereco, número, complemento, logradouro, CEP, bairro, município e UF. Poderá realizar as seguintes operações: consultar endereço da herança PJ e consultar endereço da classe localidade
 A classe "ENDEREÇO" possui relacionamento com a classe "denúncia", em que um endereço possuirá uma ou muitas denúncias. A classe "Endereço", também possui relacionamento com a herança da classe "USER", a mesma poderá verificar o endereço das pessoas físicas e a sede das pessoas jurídicas (empresas).
-
+<br></br>
 Diagrama de entidade e relacionamento 
 <img width="1012" height="515" alt="Image" src="https://github.com/user-attachments/assets/cede112c-5777-4109-a147-39f1db06de65" />
 O Diagrama Entidade Relacionamento possui 4 entidades: USER, DENÚNCIA, LOCALIDADES E ENDEREÇO. O "User" representa o usuário, que possui os atributos: id_user (como chave primária para identificação única do mesmo), nome_user, login, senha (fazem parte da autenticação do site), tipo_user (para identificação de voluntários e empresas parceiras), endereco_user. 
