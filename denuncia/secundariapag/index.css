@@ -1,0 +1,73 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.div-form {
+  
+    width: 100%;
+    height: 700px;
+    background-image: url(imagem-fundo.jpg);
+    object-fit: cover;
+    z-index: 1;
+    
+
+}
+
+
+
+.form h1 {
+  font-family: sans-serif;
+}
+
+.navi {
+  background-color: #ffffff;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  }
+
+
+  .btn{
+    color: #FF7B1C;
+    text-decoration: none;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    width: 250px;
+    font-size: 20px;
+  
+    font-weight: bold;
+    transition-duration: 1s;
+    margin: 10px;
+  }
+  
+  .navi > button:hover {
+  transition: 0.9s;
+  font-size: 25px;
+  background-color: #FF7B1C;
+  color: white;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.text-denuncia {
+  position: absolute;
+  left: 20px;
+  height: 600px;
+  width: 560px;
+  z-index: 2;
+  padding: 30px;
+}
+
+.text-denuncia p {
+  color: #ffffff;
+  white-space: pre-wrap;
+}
+
+
+
+

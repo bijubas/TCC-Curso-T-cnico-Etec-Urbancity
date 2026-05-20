@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  display: flex;
+}
+
+.container2 {
+  margin-left: auto;
+  position: absolute;
+  top: px;
+  right: 0; /* Posiciona a .container2 no canto superior direito da .container */
+  z-index: 2; /* Certifique-se de que a container2 tenha um z-index maior que a group-form */
+  margin: 30px;
+  margin-right: 16%;
+}
+
+.group-form {
+  width: 100%;
+  height: 700px;
+  background-image: url(imagem-fundo.jpg);
+  object-fit: cover;
+  z-index: 1;
+}
+
+.form {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  height: 600px;
+  width: 560px;
+  background-color: #ffffffd7;
+  z-index: 2;
+  border-radius: 5%;
+  padding: 30px;
+}
+
+.navi {
+  background-color: #ffffff;
+  height: 100px;
+  width: 100%;
+  display: flex;
+}
+
+.btn {
+  color: #FF7B1C;
+  text-decoration: none;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  width: 250px;
+  font-size: 20px;
+  font-weight: bold;
+  transition-duration: 1s;
+  margin: 10px;
+}
+
+.navi > button:hover {
+  transition: 0.9s;
+  font-size: 25px;
+  background-color: #FF7B1C;
+  color: white;
+}
+
+h1 {
+  margin: 0.67em 0;
+  font-size: 2em;
+}
+
+.search-container {
+  margin-bottom: 40px;
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.search-button {
+  padding: 10px;
+  background-color: #4285f4;
+  color: white;
+  border: 1px solid #4285f4;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #357ae8;
+  border: 1px solid #357ae8;
+}
+
+#picture__input {
+  display: none;
+}
+
+.picture {
+  width: 400px;
+  aspect-ratio: 16/9;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  border: 2px dashed currentcolor;
+  cursor: pointer;
+  font-family: sans-serif;
+  transition: color 300ms ease-in-out, background 300ms ease-in-out;
+  outline: none;
+  overflow: hidden;
+}
+
+.picture:hover {
+  color: #777;
+  background: #ccc;
+}
+
+.picture:active {
+  border-color: turquoise;
+  color: turquoise;
+  background: #eee;
+}
+
+.picture:focus {
+  color: #777;
+  background: #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.picture__img {
+  max-width: 100%;
+}
+
+.enviar {
+  margin: 10px;
+  margin-top: 25px;
+  text-decoration: none;
+  border: none;
+  width: 78px;
+  height: 40px;
+  font-size: 17px;
+  padding: 10px;
+  background-color: #4285f4;
+  color: white;
+  border: 1px solid #4285f4;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  background-color: #357ae8;
+  border: 1px solid #357ae8;
+}
+
+.text {
+  white-space: pre-wrap;
+  font-family: sans-serif;
+  color: white;
+
+}

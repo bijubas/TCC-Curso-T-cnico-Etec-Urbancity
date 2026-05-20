@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Denuncia</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="index.css">
+    <script src="../pagina-principal/index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navi">
+        <button class="btn" onclick="home()">Home</button>
+        <button class="btn" onclick="perfil()">Meu perfil</button>
+        <button class="btn" onclick="denun()">Indique um Local</button>
+        <button type="button" onclick="logout()" class="btn">Sair</button>
+    </div>
+
+    <div class="container">
+        <div class="form">
+            <h1>Endereço</h1>
+            <div class="search-container">
+                <!-- Use o evento oninput para chamar a função sugerirEnderecos automaticamente -->
+                <input type="text" placeholder="" class="search-input" required id="buscar" oninput="sugerirEnderecos()">
+                <button class="search-button" onclick="api()">Buscar</button>
+                <div id="container-resultado" class="text">
+                    <!-- A div onde os resultados da API serão exibidos -->
+                </div>
+            </div>
+
+            <h1>Imagens</h1>
+            <label class="picture" for="picture__input" tabIndex="0">
+                <span class="picture__image"></span>
+            </label>
+
+            <input type="file" name="picture_input" id="picture__input">
+
+            <script>
+                const dadosApi = [
+                    {
+                        "endereco": "Praça Cruz da Esperança",
+                        "id": "1"
+                    },
+                    {
+                        "endereco": "Rua da Liberdade",
+                        "id": "2"
+                    },
+                    // Adicione mais dados conforme necessário
+                ];
+
+                function pesquisa() {
+                    let endereco = document.getElementById("buscar");
+                    let valorinput = endereco.value;
+                    console.log("ola", valorinput);
+                }
+
+                function api() {
+                    const apiUrl = "https://656ff79509586eff6640890c.mockapi.io/busc/enderecos";
+                    fetch(apiUrl)
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error(`Erro de rede: ${response.status}`);
+                            }
+                            return response.json();
+                        })
+                        .then(data => {
+                            console.log('Dados da API:', data);
+                            mostrarEnderecos(data);
+                        })
+                        .catch(error => {
+                            console.error('Erro na requisição:', error);
+                        });
+                }
+
+                function mostrarEnderecos(enderecos) {
+                    const containerResultado = document.getElementById("container-resultado");
+                    containerResultado.innerHTML = ""; // Limpa o conteúdo anterior
+
+                    enderecos.forEach(endereco => {
+                        const divEndereco = document.createElement("div");
+                        divEndereco.textContent = ` ${endereco.endereco}`;
+                        containerResultado.appendChild(divEndereco);
+                    });
+                }
+
+                function sugerirEnderecos() {
+                    const termoPesquisa = document.getElementById("buscar").value.toLowerCase();
+                    const enderecosFiltrados = dadosApi.filter(endereco => endereco.endereco.toLowerCase().includes(termoPesquisa));
+                    mostrarEnderecos(enderecosFiltrados);
+                }
+            </script>
+            <div class="botao-enviar">
+                <button class="enviar">Enviar</button>
+            </div>
+        </div>
+        <div class="group-form"></div>
+
+        <div class="container2">
+            <div class="text">
+                <h1> 
+                    Observou um local 
+                que precisa de revitalização? 
+                    Denúncie Aqui Já! </h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
