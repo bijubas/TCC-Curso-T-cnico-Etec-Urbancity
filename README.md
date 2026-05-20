@@ -12,10 +12,6 @@ As pesquisas foram aprofundadas sobre o público-alvo para compreender suas nece
 Esta pergunta a ser realizada é a respeito da idade do participante, com o intuito de saber o nosso público-alvo para remanejar nossa forma de comunicação no próprio site e propagandas, além de influenciar nas escolhas referentes ao design da plataforma web.
 
 <br></br>
-<img width="2360" height="692" alt="Image" src="https://github.com/user-attachments/assets/ad8e8ecd-f3e4-4afc-99ca-378e8bb9194e" /> 
-Esta pergunta objetiva saber o gênero dos usuários, com o intuito de reunir informações quantitativas. Durante a montagem e realização do site, esta pergunta não possui significancia.
-
-<br></br>
 <img width="2360" height="1476" alt="Image" src="https://github.com/user-attachments/assets/fd1ceeee-97bc-4299-88c6-8bc5c5ca436b" />
 Esta pergunta possui o objetivo de ter conhecimento das áreas mais necessitadas do nosso projeto, mapeando assim as áreas mais afetadas pelo acúmulo de lixo e carentes de cuidados.
 
