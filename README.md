@@ -23,7 +23,7 @@ Na última pergunta, questiona-se aos participantes se os mesmos participariam d
 Realizamos a modelagem do sistema por meio de diagramas de classes e diagramas entidade-relacionamento (ER), estruturando a organização do banco de dados e o funcionamento da plataforma. Essa etapa foi crucial para definir entidades, relacionamentos, funcionalidades e a interação entre os usuários e o sistema, garantindo uma estrutura mais organizada.
 
 <br></br>
-** Diagrama de classes **
+Diagrama de classes 
 <img width="682" height="522" alt="Image" src="https://github.com/user-attachments/assets/03165017-8c93-4e7d-a258-7626e001435b" />
 O diagrama de classes possui 4 classes: USER, DENÚNCIA, LOCALIDADES E ENDEREÇO. O "User" representa o usuário, que possui os atributos: id_user, nome_user, login, senha (fazem parte da autenticação do site) e endereco_user. No diagrama, a classe "User" poderá fazer as seguintes operações: Cadastro, login, verificar a senha, doar, voluntariar-se e denunciar um local.
 A classe "User" possui duas heranças: A tabela PF (pessoa física), que possui um atributo (CPF), poderá realizar as operações de doação e se voluntariar. Já a tabela PJ, que possui os seguintes atributos: CNPJ, nome fantasia e nome social, poderá realizar apenas a operação de doações. As mesmas estão relacionadas com a verificação do tipo do usuário, e sua operação no site. A classe user está relacionada a classe "Denuncia", em que um usuário poderá realizar uma ou muitas denúncias.
@@ -32,7 +32,7 @@ A classe "localidades" representa o local que precisa ser revitalizado. A mesma 
 A classe "ENDEREÇO", representa o endereço dos locais a serem revitalizados. A mesma possui os seguintes atributos: id_endereco, número, complemento, logradouro, CEP, bairro, município e UF. Poderá realizar as seguintes operações: consultar endereço da herança PJ e consultar endereço da classe localidade
 A classe "ENDEREÇO" possui relacionamento com a classe "denúncia", em que um endereço possuirá uma ou muitas denúncias. A classe "Endereço", também possui relacionamento com a herança da classe "USER", a mesma poderá verificar o endereço das pessoas físicas e a sede das pessoas jurídicas (empresas).
 
-** Diagrama de entidade e relacionamento **
+Diagrama de entidade e relacionamento 
 <img width="1012" height="515" alt="Image" src="https://github.com/user-attachments/assets/cede112c-5777-4109-a147-39f1db06de65" />
 O Diagrama Entidade Relacionamento possui 4 entidades: USER, DENÚNCIA, LOCALIDADES E ENDEREÇO. O "User" representa o usuário, que possui os atributos: id_user (como chave primária para identificação única do mesmo), nome_user, login, senha (fazem parte da autenticação do site), tipo_user (para identificação de voluntários e empresas parceiras), endereco_user. 
 No diagrama, a entidade "User" possui relacionamento com a entidade "Denúncia", podendo fazer uma ou muitas denúncias. A "Denúncia" representa as denúncias de localidades feitas pelo usuário. A mesma possui os seguintes atributos: id_denuncia (como chave primária, para identificação única da mesma), data, id_user (como chave estrangeira, para identificação do usuário ao realizar uma denúncia) id_endereco, id_localidades (ambas como chave estrangeira, para identificação do endereço e localidade que está sendo denunciada respectivamente) problema (para relatar o problema de uma determinada localidade).
