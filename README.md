@@ -25,6 +25,7 @@ Realizamos a modelagem do sistema por meio de diagramas de classes e diagramas e
 <br></br>
 Diagrama de classes 
 <img width="682" height="522" alt="Image" src="https://github.com/user-attachments/assets/03165017-8c93-4e7d-a258-7626e001435b" />
+
 O diagrama de classes possui 4 classes: USER, DENÚNCIA, LOCALIDADES E ENDEREÇO. O "User" representa o usuário, que possui os atributos: id_user, nome_user, login, senha (fazem parte da autenticação do site) e endereco_user. No diagrama, a classe "User" poderá fazer as seguintes operações: Cadastro, login, verificar a senha, doar, voluntariar-se e denunciar um local.
 A classe "User" possui duas heranças: A tabela PF (pessoa física), que possui um atributo (CPF), poderá realizar as operações de doação e se voluntariar. Já a tabela PJ, que possui os seguintes atributos: CNPJ, nome fantasia e nome social, poderá realizar apenas a operação de doações. As mesmas estão relacionadas com a verificação do tipo do usuário, e sua operação no site. A classe user está relacionada a classe "Denuncia", em que um usuário poderá realizar uma ou muitas denúncias.
 A classe "Denúncia" representa as denúncias de localidades feitas pelo usuário. A mesma possui os seguintes atributos: id_denuncia e data. Contém também a seguinte operação: criar um local por uma denúncia. A classe "Denúncias" está relacionada com a classe localidade, podendo ser feita uma ou muitas denúncias a uma localidade. 
